@@ -358,17 +358,13 @@
                 </div>
                 <div class="footer-form-box">
                     <strong class="footer-form-title">Subscribe</strong>
-                    <form class="footer-form" autocomplete="of">
-                        <div class="footer-form-wrapper">
-                            <label class="footer-form-label" for="footer-email"  >Email</label>
-                            <input class="footer-form-input" type="footer=email" name="footer-email" id="footer-email" required minlength="2" placeholder=" ">
-                        </div>
-                        <div class="footer-form-container">
-                            <button class="footer-form-button" type="submin">Subscribe</button>
-                            <svg class="footer-form-icon"width="24" height="24">
+                    <form class="footer-form" autocomplete="off">
+                        <input type="email" class="footer-form-input" name="footer-email" id="footer-email" required minlength="2" placeholder="Email">
+                        <button type="submit" class="footer-form-button">Subscribe
+                            <svg class="footer-form-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-form-footer"></use>
                             </svg>
-                        </div>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -376,7 +372,7 @@
            <!-- Modal window -->
            <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-close-button" type="button" data-modal-close>
+                <button type="button" class="modal-close-button" data-modal-close>
                     <svg class="modal-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
@@ -385,21 +381,21 @@
                 <form class="modal-form" name="modal-form" autocomplete="on" >
                     <label class="modal-form-label" for="user-name">Name</label>
                     <div class="modal-form-wrapper">
-                        <input class="modal-form-input" type="text" name="user-name" id="user-name" placeholder=" "required minlength="2">
+                        <input type="text" class="modal-form-input" name="user-name" id="user-name" placeholder=" " required minlength="2">
                         <svg class="modal-form-icon" width="12" height="12">
                             <use href="./images/icons.svg#icon-name"></use>
                         </svg>
                     </div>
                     <label class="modal-form-label" for="user-phone">Phone</label>
                     <div class="modal-form-wrapper">
-                        <input class="modal-form-input" type="tel" name="user-phone" id="user-phone" placeholder=" "required minlength="12" maxlength="12">
+                        <input type="tel" class="modal-form-input" name="user-phone" id="user-phone" placeholder=" " required minlength="12" maxlength="12">
                         <svg class="modal-form-icon" width="13" height="13">
                             <use href="./images/icons.svg#icon-tel"></use>
                         </svg>
                     </div>
                     <label class="modal-form-label" for="user-email">Email</label>
                     <div class="modal-form-wrapper">
-                        <input class="modal-form-input" type="email" name="user-email" id="user-email" placeholder=" "required minlength="2">
+                        <input type="email" class="modal-form-input" name="user-email" id="user-email" placeholder=" " required minlength="2">
                         <svg class="modal-form-icon" width="15" height="12">
                             <use href="./images/icons.svg#icon-email"></use>
                     </svg>
@@ -407,17 +403,16 @@
                     <label class="modal-form-label" for="user-message">Comment</label>
                     <textarea class="modal-form-message" name="user-message" id="user-message" rows="5" placeholder="Text input"></textarea>
                     <label class="modal-form-agreement" for="user-agreement">
-                        <input class="modal-form-agreement-box" type="checkbox" name="user-agreement" id="user-agreement" required minlength="2">
+                        <input type="checkbox" class="modal-form-agreement-box" name="user-agreement" id="user-agreement" required>
                         <svg class="modal-form-agreement-icon" width="16" height="16">
                             <use class="modal-form-checked" href="./images/icons.svg#icon-click"></use>
                             <use class="modal-form-unchecked" href="./images/icons.svg#icon-unclick"></use>
                         </svg>
-                        
                         <span class="modal-form-agreement-text">I accept the terms and conditions of the 
-                            <a class="modal-form-agreement-link" href="Privacy Policy">Privacy Policy</a>
+                            <a href="" class="modal-form-agreement-link">Privacy Policy</a>
                         </span>
                     </label>
-                    <button class="modal-buttom" type="submit">Send</button>
+                    <button type="submit" class="modal-buttom">Send</button>
                 </form>
             </div>
         </div>
